@@ -520,7 +520,7 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: On Fire
+          name: Flower on fire
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: On Fire
+          name: Flower on fire
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: On Fire
+          name: Flower on fire
           tooltip: 
           showInInspector: 0
           networkSync: 0

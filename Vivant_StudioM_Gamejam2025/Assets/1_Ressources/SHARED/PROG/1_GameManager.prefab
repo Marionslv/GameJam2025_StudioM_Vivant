@@ -689,7 +689,7 @@ MonoBehaviour:
         stringParams:
         - FINISHED
         - 
-        byteData: 000000000001
+        byteData: 010000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -896,8 +896,7 @@ MonoBehaviour:
         stringValues: []
         vector4Values: []
         objectReferences:
-        - {fileID: 0}
-        - {fileID: 0}
+        - {fileID: 907902526568313718, guid: 33125422a53e0bf4c9891a55a8fb31eb, type: 3}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
@@ -995,7 +994,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 162
+        x: 50
         y: 100
         width: 100
         height: 32
@@ -1016,13 +1015,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 48c0110127fbe103
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000006000000
+        actionHashCodes: 48c0110127fbe10327fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1058,6 +1059,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: Flower on fire
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -1065,12 +1078,12 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Finished
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000110000001100000001000000
+        paramDataType: 0f0000001700000001000000110000001100000001000000110000001100000001000000
         paramName:
         - time
         - finishEvent
@@ -1078,14 +1091,17 @@ MonoBehaviour:
         - boolVariable
         - boolValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000100000001000000
-        paramByteDataSize: 000000000000000001000000000000000000000001000000
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 000000000000000000000000000000000100000001000000020000000300000002000000
+        paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000001000000
     - name: Modifier la position du nuage
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 472
+        x: 360
         y: 103
         width: 199
         height: 32
@@ -1105,14 +1121,12 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.MoveTowards
-        - HutongGames.PlayMaker.Actions.SmoothLookAt
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: fa0e54024e661301
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: fa0e5402
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -1121,21 +1135,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 1
-          name: Flower_Choose_by_cloud
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 6360088929849165581}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -1167,33 +1167,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 3
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
+          value: 0.01
         fsmIntParams: []
         fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -1207,31 +1183,18 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: {x: 0, y: 10, z: 0}
-        - useVariable: 1
-          name: offset_nuage_Y
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          value: {x: 0, y: 10, z: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: {x: 0, y: 6, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Finished
         - Finished
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000014000000130000001c0000001c000000110000000f000000110000000f00000017000000
+        paramDataType: 14000000130000001c000000110000000f0000000f00000017000000
         paramName:
         - gameObject
         - targetObject
@@ -1240,23 +1203,14 @@ MonoBehaviour:
         - maxSpeed
         - finishDistance
         - finishEvent
-        - gameObject
-        - targetObject
-        - targetPosition
-        - upVector
-        - keepVertical
-        - speed
-        - debug
-        - finishTolerance
-        - finishEvent
-        paramDataPos: 00000000000000000000000000000000000000000100000000000000010000000100000001000000020000000100000002000000020000000300000001000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 00000000000000000000000000000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000
     - name: Set bool value
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 832.0156
+        x: 720.0156
         y: 216.69531
         width: 112
         height: 32
@@ -1334,7 +1288,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1115.2969
+        x: 1003.2969
         y: 239.5625
         width: 110
         height: 32
@@ -1386,7 +1340,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 4
+          value: 3
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -1414,8 +1368,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1022.6328
-        y: 395.21094
+        x: 718.6328
+        y: 382.21094
         width: 151
         height: 32
       isBreakpoint: 0
@@ -1426,7 +1380,7 @@ MonoBehaviour:
           name: Finished
           isSystemEvent: 0
           isGlobal: 0
-        toState: wait
+        toState: lancer l'incendie
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -1538,6 +1492,135 @@ MonoBehaviour:
         - realTime
         paramDataPos: 0000000000000000010000000200000003000000040000000500000000000000000000000000000001000000
         paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000000000000000000001000000
+    - name: lancer l'incendie
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 278.42188
+        y: 382.96875
+        width: 124
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Finished
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: wait
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.ParticleSystemPlay
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000008000000
+        actionHashCodes: 27fbe10373b3190348c01101
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2237780984808804053}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: Temps de l'incendie
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 3
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Flower on fire
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Finished
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000110000000100000014000000110000001100000011000000110000000f0000001700000001000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - gameObject
+        - withChildren
+        - cacheChildren
+        - stopOnExit
+        - destroyOnFinish
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000001000000000000000000000002000000030000000400000005000000000000000000000001000000
+        paramByteDataSize: 0000000000000000010000000000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: "Lance L'\xE9clair"
       isSystemEvent: 0
@@ -1553,7 +1636,13 @@ MonoBehaviour:
       isGlobal: 0
     globalTransitions: []
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: Temps de l'incendie
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 3
       intVariables: []
       boolVariables: []
       stringVariables: []
@@ -1564,7 +1653,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {x: 0, y: 10, z: 0}
+        value: {x: 0, y: 6, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
@@ -1576,7 +1665,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1759,14 +1848,23 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 298.8828
-        y: 126.46875
-        width: 108
-        height: 16
+        x: 352.0625
+        y: 96.671875
+        width: 107
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Point de vie
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.RestartLevel
@@ -1811,6 +1909,9 @@ MonoBehaviour:
     events:
     - name: DEATH _ RESTART
       isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
       isGlobal: 0
     globalTransitions: []
     variables:
@@ -3496,7 +3597,7 @@ PrefabInstance:
     - target: {fileID: 2509425443408958167, guid: 749d1ef3765e8ec488059093c1471cd9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2509425443408958167, guid: 749d1ef3765e8ec488059093c1471cd9,
         type: 3}
@@ -3579,6 +3680,12 @@ MonoBehaviour:
 --- !u!4 &1194433443610581990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2509425443408958167, guid: 749d1ef3765e8ec488059093c1471cd9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3620964221299624241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2237780984808804053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3264562401865992164, guid: 749d1ef3765e8ec488059093c1471cd9,
     type: 3}
   m_PrefabInstance: {fileID: 3620964221299624241}
   m_PrefabAsset: {fileID: 0}
