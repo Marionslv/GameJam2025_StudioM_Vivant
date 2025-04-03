@@ -872,7 +872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3747201093934587049}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0348995, w: 0.99939084}
   m_LocalPosition: {x: 0.20000005, y: 0.44500005, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2259,7 +2259,7 @@ MonoBehaviour:
     OrthographicSize: 10
     NearClipPlane: 0.2
     FarClipPlane: 500
-    Dutch: 0
+    Dutch: -4
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
