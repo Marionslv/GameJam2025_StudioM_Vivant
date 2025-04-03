@@ -34,12 +34,6 @@ MonoBehaviour:
       networkSync: 0
       value: 3
     - useVariable: 1
-      name: Point de vie perdu
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
-    - useVariable: 1
       name: Nombre de fleur morte
       tooltip: 
       showInInspector: 0
