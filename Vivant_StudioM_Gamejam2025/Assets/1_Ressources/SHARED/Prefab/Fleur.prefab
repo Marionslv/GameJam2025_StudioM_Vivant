@@ -202,13 +202,13 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.RandomWait
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 48c01101
+        actionHashCodes: 0d5f5c01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -230,6 +230,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 30
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -244,13 +250,14 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000
+        paramDataType: 0f0000000f0000001700000001000000
         paramName:
-        - time
+        - min
+        - max
         - finishEvent
         - realTime
-        paramDataPos: 000000000000000000000000
-        paramByteDataSize: 000000000000000001000000
+        paramDataPos: 00000000010000000000000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     - name: Burning Timer
       description: 
       colorIndex: 0
@@ -275,13 +282,13 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.RandomWait
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 48c01101
+        actionHashCodes: 0d5f5c01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -303,6 +310,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 5
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 8
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -317,13 +330,14 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000
+        paramDataType: 0f0000000f0000001700000001000000
         paramName:
-        - time
+        - min
+        - max
         - finishEvent
         - realTime
-        paramDataPos: 000000000000000000000000
-        paramByteDataSize: 000000000000000001000000
+        paramDataPos: 00000000010000000000000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     - name: Hurt
       description: 
       colorIndex: 0
