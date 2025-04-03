@@ -2467,7 +2467,7 @@ GameObject:
   - component: {fileID: 1639991648}
   - component: {fileID: 1639991647}
   - component: {fileID: 1639991646}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Taille_terrain_11x11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
