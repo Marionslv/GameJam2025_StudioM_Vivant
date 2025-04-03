@@ -13,24 +13,73 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables: []
-    intVariables: []
-    boolVariables: []
+    floatVariables:
+    - useVariable: 1
+      name: Nombre de fleur morte
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Flower_choose_position_X
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Flower_choose_Position_Y
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    intVariables:
+    - useVariable: 1
+      name: 'ECHEC : Nombre de fleur morte'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: Point de vie
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: Cloud is on Flower choose
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables: []
-    vector3Variables: []
+    vector3Variables:
+    - useVariable: 1
+      name: Flower_Choose_Position
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
     gameObjectVariables:
     - useVariable: 1
-      name: Player
+      name: Contextual text
       tooltip: 
       showInInspector: 0
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
-      name: Contextual text
+      name: Player
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 6969679808951939394, guid: b7209bba3f9eaa640ad302a3a116cd56,
+        type: 3}
+    - useVariable: 1
+      name: Flower_Choose_by_cloud
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -42,5 +91,5 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events: []
