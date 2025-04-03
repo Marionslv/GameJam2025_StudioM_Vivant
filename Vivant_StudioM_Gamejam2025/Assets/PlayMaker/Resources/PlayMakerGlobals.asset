@@ -26,6 +26,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: "Temps Assom\xE9"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 4
     intVariables:
     - useVariable: 1
       name: 'ECHEC : Nombre de fleur morte'
@@ -42,6 +48,12 @@ MonoBehaviour:
     boolVariables:
     - useVariable: 1
       name: Cloud is on Flower choose
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "Orage lanc\xE9"
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -85,5 +97,5 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events: []
