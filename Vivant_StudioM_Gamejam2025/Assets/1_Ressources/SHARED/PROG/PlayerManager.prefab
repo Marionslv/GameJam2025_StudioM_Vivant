@@ -91,7 +91,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 3515909701439038853}
+          value: {fileID: 5131977020916262604}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -274,7 +274,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 6969679808951939394, guid: b7209bba3f9eaa640ad302a3a116cd56,
+            value: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
               type: 3}
         - ownerOption: 1
           gameObject:
@@ -283,7 +283,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 6969679808951939394, guid: b7209bba3f9eaa640ad302a3a116cd56,
+            value: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
               type: 3}
         - ownerOption: 1
           gameObject:
@@ -292,7 +292,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 6969679808951939394, guid: b7209bba3f9eaa640ad302a3a116cd56,
+            value: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
               type: 3}
         animationCurveParams: []
         functionCallParams: []
@@ -476,7 +476,7 @@ MonoBehaviour:
           name: Choose_AGain
           isSystemEvent: 0
           isGlobal: 0
-        toState: 
+        toState: Choose Tools
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
+        actionEnabled: 010001
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: b2cf100073b31903ea32f700
@@ -556,7 +556,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           enumName: HutongGames.EasingFunction+Ease
-          intValue: 0
+          intValue: 21
         fsmFloatParams:
         - useVariable: 0
           name: 
@@ -1172,9 +1172,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3515909701439038853 stripped
+--- !u!1 &5131977020916262604 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6969679808951939394, guid: b7209bba3f9eaa640ad302a3a116cd56,
+  m_CorrespondingSourceObject: {fileID: 1678208846146515467, guid: b7209bba3f9eaa640ad302a3a116cd56,
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
