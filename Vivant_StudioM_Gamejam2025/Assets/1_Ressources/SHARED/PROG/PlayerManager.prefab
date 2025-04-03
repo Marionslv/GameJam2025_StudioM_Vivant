@@ -524,7 +524,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010001
+        actionEnabled: 010101
         actionIsOpen: 010101
         actionStartIndex: 00000000050000000a000000
         actionHashCodes: b2cf100073b31903ea32f700
@@ -551,14 +551,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 26292321721206082}
-        - ownerOption: 0
+        - ownerOption: 1
           gameObject:
             useVariable: 0
             name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1485568808639234464}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -1009,6 +1009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8107375188268564519, guid: b7209bba3f9eaa640ad302a3a116cd56,
         type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107375188268564519, guid: b7209bba3f9eaa640ad302a3a116cd56,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -1090,6 +1095,12 @@ PrefabInstance:
 --- !u!1 &26292321721206082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5777884534411760005, guid: b7209bba3f9eaa640ad302a3a116cd56,
+    type: 3}
+  m_PrefabInstance: {fileID: 5796770321916056775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1485568808639234464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4967346216150160743, guid: b7209bba3f9eaa640ad302a3a116cd56,
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
