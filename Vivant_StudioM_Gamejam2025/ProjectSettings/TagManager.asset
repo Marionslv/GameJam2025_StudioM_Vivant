@@ -9,6 +9,8 @@ TagManager:
   - "Fleur fan\xE9e"
   - "Fleu brul\xE9e"
   - Tas de cendre _ DEAD
+  - Enemy
+  - fleur qui pousse
   layers:
   - Default
   - TransparentFX
