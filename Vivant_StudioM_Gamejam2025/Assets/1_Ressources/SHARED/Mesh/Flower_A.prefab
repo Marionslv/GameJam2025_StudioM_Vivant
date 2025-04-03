@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1691826600701737801}
   m_Layer: 0
   m_Name: Flower_A
-  m_TagString: Untagged
+  m_TagString: Belle fleur
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
