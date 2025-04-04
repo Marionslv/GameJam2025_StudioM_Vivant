@@ -6607,12 +6607,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1926667904}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1935995848 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6839921201093420179, guid: b1bff85f13f3a294399f12b1f609aed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 7006569203224672531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1998660897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7250,26 +7244,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2048506169645423184, guid: b1bff85f13f3a294399f12b1f609aed1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8394437
-      objectReference: {fileID: 0}
-    - target: {fileID: 2048506169645423184, guid: b1bff85f13f3a294399f12b1f609aed1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.24349254
-      objectReference: {fileID: 0}
-    - target: {fileID: 2048506169645423184, guid: b1bff85f13f3a294399f12b1f609aed1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.4666121
-      objectReference: {fileID: 0}
-    - target: {fileID: 2048506169645423184, guid: b1bff85f13f3a294399f12b1f609aed1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.13534747
-      objectReference: {fileID: 0}
     - target: {fileID: 2059880162984480197, guid: b1bff85f13f3a294399f12b1f609aed1,
         type: 3}
       propertyPath: fsm.variables.arrayVariables.Array.data[0].objectReferences.Array.data[0]
@@ -7500,16 +7474,6 @@ PrefabInstance:
       propertyPath: fsm.states.Array.data[0].actionData.fsmArrayParams.Array.data[0].objectReferences.Array.data[24]
       value: 
       objectReference: {fileID: 1455695746}
-    - target: {fileID: 2075223161212941293, guid: b1bff85f13f3a294399f12b1f609aed1,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 1935995848}
-    - target: {fileID: 2075223161212941293, guid: b1bff85f13f3a294399f12b1f609aed1,
-        type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 1935995848}
     - target: {fileID: 4400201968032175107, guid: b1bff85f13f3a294399f12b1f609aed1,
         type: 3}
       propertyPath: m_Name
