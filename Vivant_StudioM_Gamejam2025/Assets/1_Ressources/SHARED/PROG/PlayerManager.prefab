@@ -49,9 +49,9 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Choose Tools
-    startState: Choose Tools
+    startState: Wait for input
     states:
-    - name: Choose Tools
+    - name: Wait for input
       description: 
       colorIndex: 0
       position:
@@ -59,34 +59,16 @@ MonoBehaviour:
         x: 54
         y: 352
         width: 157
-        height: 64
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Active_Shovel
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: 
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
           name: Active_Watering_Can
           isSystemEvent: 0
           isGlobal: 0
         toState: Use Watering_Can
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: Acctive_Umbrella
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: 
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -186,13 +168,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.ParticleSystemPlay
         - HutongGames.PlayMaker.Actions.TweenRotation
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 73b31903ea32f700
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000001
+        actionStartIndex: 000000000500000016000000
+        actionHashCodes: 73b31903ea32f70081294e04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -224,6 +208,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 8972304658218208948}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 6974229458299516792}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -237,7 +229,14 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 8375a71e005b580419cdf56e243c2505, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams:
@@ -261,8 +260,20 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0.5
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -312,12 +323,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - FINISHED
+        - 
         byteData: 020000000200000000000000000000000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001100000011000000110000001100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 140000001100000011000000110000001100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000140000000f000000180000001100000017000000
         paramName:
         - gameObject
         - withChildren
@@ -341,8 +353,13 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 000000000000000001000000020000000300000000000000000000000000000004000000010000000100000001000000000000000000000000000000010000000400000008000000000000000c0000001000000011000000
-        paramByteDataSize: 00000000000000000000000000000000000000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - WaitForEndOfClip
+        - finishedEvent
+        paramDataPos: 000000000000000001000000020000000300000000000000000000000000000004000000010000000100000001000000000000000000000000000000010000000400000008000000000000000c00000010000000110000000200000002000000000000000500000001000000
+        paramByteDataSize: 000000000000000000000000000000000000000004000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000004000000000000000400000001000000040000000000000000000000000000000000000000000000
     - name: retour_arosoir
       description: 
       colorIndex: 0
@@ -360,7 +377,7 @@ MonoBehaviour:
           name: Choose_AGain
           isSystemEvent: 0
           isGlobal: 0
-        toState: Choose Tools
+        toState: Wait for input
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -1076,11 +1093,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5777884534411760005, guid: b7209bba3f9eaa640ad302a3a116cd56,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5130925112192181881}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7209bba3f9eaa640ad302a3a116cd56, type: 3}
 --- !u!1 &26292321721206082 stripped
 GameObject:
@@ -1088,33 +1101,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &5130925112192181881
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26292321721206082}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1485568808639234464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4967346216150160743, guid: b7209bba3f9eaa640ad302a3a116cd56,
@@ -1124,6 +1110,12 @@ GameObject:
 --- !u!4 &3312059663216868828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9044511534531062043, guid: b7209bba3f9eaa640ad302a3a116cd56,
+    type: 3}
+  m_PrefabInstance: {fileID: 5796770321916056775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6974229458299516792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3511456791514096575, guid: b7209bba3f9eaa640ad302a3a116cd56,
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
