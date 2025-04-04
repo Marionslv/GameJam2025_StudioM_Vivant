@@ -57,8 +57,8 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 54
-        y: 160
-        width: 155
+        y: 352
+        width: 157
         height: 64
       isBreakpoint: 0
       isSequence: 0
@@ -225,8 +225,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 677
-        y: 229
+        x: 320
+        y: 768
         width: 115
         height: 32
       isBreakpoint: 0
@@ -345,40 +345,34 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 686
-        y: 126.734375
-        width: 137
+        x: 544
+        y: 304
+        width: 139
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Waterng_Flower
-          isSystemEvent: 0
+          name: FINISHED
+          isSystemEvent: 1
           isGlobal: 0
-        toState: Go heal flower
+        toState: Is there a flower ?
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ParticleSystemPlay
         - HutongGames.PlayMaker.Actions.TweenRotation
-        - HutongGames.PlayMaker.Actions.TriggerEvent
-        - HutongGames.PlayMaker.Actions.TriggerEvent
         customNames:
         - 
         - 
-        - 
-        - 
-        - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 00000000050000000a0000001b00000020000000
-        actionHashCodes: b2cf100073b31903ea32f7009c5124009c512400
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 73b31903ea32f700
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -393,27 +387,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 26292321721206082}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -429,23 +403,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 26292321721206082}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 8616682883154174313}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 8616682883154174313}
+            value: {fileID: 8972304658218208948}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -458,19 +416,7 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: "Fleu brul\xE9e"
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: "Fleur fan\xE9e"
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -494,21 +440,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: 0.5
         fsmIntParams: []
         fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -546,32 +480,25 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: {x: -40, y: 0, z: 0}
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 30, y: 0, z: 0}
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
-        - Waterng_Flower
-        - Waterng_Flower
-        byteData: 00000200000002000000000000000000000000010000000000000000000000
+        - FINISHED
+        byteData: 020000000200000000000000000000000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000140000001100000011000000110000001100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000014000000070000001200000017000000130000001400000007000000120000001700000013000000
+        paramDataType: 140000001100000011000000110000001100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
         paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
         - gameObject
         - withChildren
         - cacheChildren
@@ -594,25 +521,15 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        - gameObject
-        - trigger
-        - collideTag
-        - sendEvent
-        - storeCollider
-        - gameObject
-        - trigger
-        - collideTag
-        - sendEvent
-        - storeCollider
-        paramDataPos: 000000000000000001000000000000000100000001000000020000000300000004000000050000000200000000000000000000000600000001000000010000000200000000000000000000000000000001000000060000000a000000000000000e00000012000000130000000300000017000000000000000100000002000000040000001b000000010000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000000000000000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000040000000000000000000000000000000000000004000000000000000000000000000000
+        paramDataPos: 000000000000000001000000020000000300000000000000000000000000000004000000010000000100000001000000000000000000000000000000010000000400000008000000000000000c0000001000000011000000
+        paramByteDataSize: 00000000000000000000000000000000000000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
     - name: Use Shovel
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 673
-        y: 50.96875
+        x: 304
+        y: 64
         width: 115
         height: 32
       isBreakpoint: 0
@@ -782,8 +699,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 834
-        y: 178
+        x: 576
+        y: 496
         width: 115
         height: 32
       isBreakpoint: 0
@@ -808,7 +725,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
+        actionEnabled: 000101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000016000000
         actionHashCodes: b2cf1000ea32f70073b31903
@@ -842,7 +759,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 26292321721206082}
+            value: {fileID: 8972304658218208948}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -887,7 +804,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.5
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -895,7 +812,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -939,19 +856,19 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 30, y: 0, z: 0}
+          value: {x: 0, y: 0, z: 0}
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: {x: -40, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
         - Choose_AGain
-        byteData: 0100020000000200000000000000000000000000000000
+        byteData: 0000020000000200000000000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -992,9 +909,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1001
-        y: 135
-        width: 111
+        x: 1072
+        y: 384
+        width: 113
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -1011,16 +928,58 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmInt
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.IntClamp
+        - HutongGames.PlayMaker.Actions.SetFsmInt
+        - HutongGames.PlayMaker.Actions.GetRoot
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5e69bb04
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101000000
+        actionIsOpen: 01010101000000
+        actionStartIndex: 0000000005000000080000000c000000110000001300000017000000
+        actionHashCodes: 081bbf05603dd9052181e802081bbf05d97b72025e69bb0448c01101
         unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Flower_to_heal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Flower_to_heal
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Flower_to_heal
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Flower_to_heal
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1036,13 +995,12 @@ MonoBehaviour:
           gameObject:
             ownerOption: 1
             gameObject:
-              useVariable: 0
-              name: 
+              useVariable: 1
+              name: Flower_to_heal
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 4381579736988593434, guid: 7cfabcf216f7cec49a9482fa00ef489b,
-                type: 3}
+              value: {fileID: 0}
           fsmName:
             useVariable: 0
             name: 
@@ -1060,7 +1018,31 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Flower_state_fab
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Flower_life
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Flower_state_fab
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Flower_life
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -1072,7 +1054,55 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmIntParams: []
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmIntParams:
+        - useVariable: 1
+          name: flower_life_local
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: flower_life_local
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 1
+          name: flower_life_local
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 4
+        - useVariable: 1
+          name: flower_life_local
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -1081,19 +1111,152 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Heal
-        byteData: 00
+        - FINISHED
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000
+        paramDataType: 140000001200000012000000100000000100000010000000100000000100000010000000100000001000000001000000140000001200000012000000100000000100000014000000130000001f000000170000000f000000010000000f0000001700000001000000
         paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - intVariable
+        - add
+        - everyFrame
+        - intVariable
+        - minValue
+        - maxValue
+        - everyFrame
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        - gameObject
+        - storeRoot
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000
-        paramByteDataSize: 00000000000000000000000001000000
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000010000000000000000000000010000000200000001000000030000000400000005000000020000000100000002000000030000000600000003000000020000000000000000000000000000000000000004000000010000000100000005000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000001000000
+    - name: Is there a flower ?
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 800
+        y: 320
+        width: 134
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Waterng_Flower
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Go heal flower
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: retour_arosoir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.TriggerEvent
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 9c51240048c01101
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Flower_to_heal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 8616682883154174313}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: "Fleur fan\xE9e"
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Waterng_Flower
+        - FINISHED
+        byteData: 0100000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000070000001200000017000000130000000f0000001700000001000000
+        paramName:
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000000000000000000000000000000000000100000004000000
+        paramByteDataSize: 0000000004000000000000000000000000000000000000000000000001000000
     events:
     - name: Active_Shovel
       isSystemEvent: 0
@@ -1122,7 +1285,13 @@ MonoBehaviour:
     globalTransitions: []
     variables:
       floatVariables: []
-      intVariables: []
+      intVariables:
+      - useVariable: 1
+        name: flower_life_local
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -1130,7 +1299,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Flower_to_heal
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -1138,7 +1313,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1252,7 +1427,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5777884534411760005, guid: b7209bba3f9eaa640ad302a3a116cd56,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5130925112192181881}
   m_SourcePrefab: {fileID: 100100000, guid: b7209bba3f9eaa640ad302a3a116cd56, type: 3}
 --- !u!1 &26292321721206082 stripped
 GameObject:
@@ -1260,6 +1439,33 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &5130925112192181881
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26292321721206082}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1485568808639234464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4967346216150160743, guid: b7209bba3f9eaa640ad302a3a116cd56,
@@ -1287,6 +1493,12 @@ GameObject:
 --- !u!1 &8758644400362733460 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3026057521379994451, guid: b7209bba3f9eaa640ad302a3a116cd56,
+    type: 3}
+  m_PrefabInstance: {fileID: 5796770321916056775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8972304658218208948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3239852202050230899, guid: b7209bba3f9eaa640ad302a3a116cd56,
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
