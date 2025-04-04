@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532176508181211314}
   m_Layer: 0
-  m_Name: FleurC4
+  m_Name: Fleur3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a94ee7b2fc5a43349822291ebcbe6519, type: 2}
+  - {fileID: 2100000, guid: 0e1b5c2dedcd4c94fa7671f206c026ce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
