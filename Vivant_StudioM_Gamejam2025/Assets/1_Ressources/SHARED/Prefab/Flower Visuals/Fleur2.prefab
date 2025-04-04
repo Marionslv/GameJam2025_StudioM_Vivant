@@ -93,7 +93,12 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 18d5698d00d6e1946aedb6e8dd06f520,
         type: 3}
       propertyPath: m_ReceiveGI
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 18d5698d00d6e1946aedb6e8dd06f520,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 18d5698d00d6e1946aedb6e8dd06f520,
         type: 3}

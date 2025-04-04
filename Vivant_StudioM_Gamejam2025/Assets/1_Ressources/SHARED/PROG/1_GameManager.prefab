@@ -8407,6 +8407,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
+    - target: {fileID: 228720371181084365, guid: 2ed4da2fce16629498e50fdd1db287e6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[2].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2373798472601375968, guid: 2ed4da2fce16629498e50fdd1db287e6,
         type: 3}
       propertyPath: m_LocalPosition.x
