@@ -1114,7 +1114,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: Heal
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: Is Burning
       isSystemEvent: 0
       isGlobal: 0
@@ -1144,19 +1144,19 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: Heal
+        name: Ded
         isSystemEvent: 0
-        isGlobal: 0
-      toState: Set Burn State Off
+        isGlobal: 1
+      toState: Is Dead
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: Ded
+        name: Heal
         isSystemEvent: 0
         isGlobal: 1
-      toState: Is Dead
+      toState: Set Burn State Off
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
@@ -1248,7 +1248,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: Heal
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     OutputEvents: []
     RestartOnEnable: 1
     ResetVariablesOnEnable: 0
