@@ -68,7 +68,7 @@ MonoBehaviour:
           name: Active_Shovel
           isSystemEvent: 0
           isGlobal: 0
-        toState: Use Shovel
+        toState: 
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
           name: Acctive_Umbrella
           isSystemEvent: 0
           isGlobal: 0
-        toState: Use Umbrella
+        toState: 
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -94,37 +94,15 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.PlayerInputTriggeredEvent
-        - HutongGames.PlayMaker.Actions.PlayerInputTriggeredEvent
-        - HutongGames.PlayMaker.Actions.PlayerInputTriggeredEvent
         customNames:
         - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000400000008000000
-        actionHashCodes: d864fa04d864fa04d864fa04
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: d864fa04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Player
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
-              type: 3}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Player
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
-              type: 3}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -150,40 +128,12 @@ MonoBehaviour:
           typeName: UnityEngine.InputSystem.InputActionReference
           value: {fileID: -1916377846673030204, guid: 4419d82f33d36e848b3ed5af4c8da37e,
             type: 3}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: UnityEngine.InputSystem.InputActionReference
-          value: {fileID: 255877987987170982, guid: 4419d82f33d36e848b3ed5af4c8da37e,
-            type: 3}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: UnityEngine.InputSystem.InputActionReference
-          value: {fileID: 8258623127805757749, guid: 4419d82f33d36e848b3ed5af4c8da37e,
-            type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
         fsmBoolParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -197,149 +147,19 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Active_Watering_Can
-        - Active_Shovel
-        - Acctive_Umbrella
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 170000001100000014000000180000001700000011000000140000001800000017000000110000001400000018000000
+        paramDataType: 17000000110000001400000018000000
         paramName:
         - sendEvent
         - storeValue
         - gameObject
         - inputAction
-        - sendEvent
-        - storeValue
-        - gameObject
-        - inputAction
-        - sendEvent
-        - storeValue
-        - gameObject
-        - inputAction
-        paramDataPos: 000000000000000000000000000000000100000001000000010000000100000002000000020000000200000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    - name: Use Umbrella
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 320
-        y: 768
-        width: 115
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: Choose_AGain
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Choose Tools
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.TriggerEvent
-        - HutongGames.PlayMaker.Actions.NextFrameEvent
-        customNames:
-        - 
-        - 
-        - 
-        actionEnabled: 010001
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: b2cf10009c51240088611604
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 8758644400362733460}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 8758644400362733460}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Enemy
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - Choose_AGain
-        - Choose_AGain
-        byteData: 010000000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000140000000700000012000000170000001300000017000000
-        paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - gameObject
-        - trigger
-        - collideTag
-        - sendEvent
-        - storeCollider
-        - sendEvent
-        paramDataPos: 0000000000000000010000000000000001000000010000000200000000000000000000000000000001000000
-        paramByteDataSize: 0000000000000000000000000100000001000000000000000400000000000000000000000000000000000000
+        paramDataPos: 00000000000000000000000000000000
+        paramByteDataSize: 00000000000000000000000000000000
     - name: Use Watering_Can
       description: 
       colorIndex: 0
@@ -523,177 +343,6 @@ MonoBehaviour:
         - updateType
         paramDataPos: 000000000000000001000000020000000300000000000000000000000000000004000000010000000100000001000000000000000000000000000000010000000400000008000000000000000c0000001000000011000000
         paramByteDataSize: 00000000000000000000000000000000000000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
-    - name: Use Shovel
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 304
-        y: 64
-        width: 115
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: Choose_AGain
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Choose Tools
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.TweenRotation
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000ea32f700
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 1649117596688561501}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 1649117596688561501}
-        animationCurveParams:
-        - curve:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          enumName: HutongGames.EasingFunction+Ease
-          intValue: 0
-        fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0.5
-        fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 90, y: 0, z: 0}
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - Choose_AGain
-        byteData: 0100020000000200000000000000000000000000000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 140000001100000011000000010000000100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
-        paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - fromOptions
-        - fromTarget
-        - fromRotation
-        - toOptions
-        - toTarget
-        - toRotation
-        - gameObject
-        - startDelay
-        - easeType
-        - customCurve
-        - time
-        - realTime
-        - loopType
-        - finishEvent
-        - normalizedTime
-        - everyFrame
-        - updateType
-        paramDataPos: 00000000000000000100000000000000010000000200000000000000000000000600000001000000010000000100000000000000000000000000000001000000020000000a000000000000000e0000001200000013000000
-        paramByteDataSize: 00000000000000000000000001000000010000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
     - name: retour_arosoir
       description: 
       colorIndex: 0
@@ -1472,12 +1121,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1649117596688561501 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5084727060637868442, guid: b7209bba3f9eaa640ad302a3a116cd56,
-    type: 3}
-  m_PrefabInstance: {fileID: 5796770321916056775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3312059663216868828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9044511534531062043, guid: b7209bba3f9eaa640ad302a3a116cd56,
@@ -1487,12 +1130,6 @@ Transform:
 --- !u!1 &8616682883154174313 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2875223494822639022, guid: b7209bba3f9eaa640ad302a3a116cd56,
-    type: 3}
-  m_PrefabInstance: {fileID: 5796770321916056775}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8758644400362733460 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3026057521379994451, guid: b7209bba3f9eaa640ad302a3a116cd56,
     type: 3}
   m_PrefabInstance: {fileID: 5796770321916056775}
   m_PrefabAsset: {fileID: 0}

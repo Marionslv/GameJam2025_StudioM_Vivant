@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.09
   contrast:
     m_OverrideState: 0
     m_Value: 0
@@ -28,6 +28,28 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-6749741290063425161
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 0.940028, y: 1, z: 0.9352945, w: 0}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.98901296, z: 0.9350828, w: 0.17971517}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.99153554, y: 1, z: 0.9699284, w: 0}
 --- !u!114 &-918774275929851530
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -66,12 +88,14 @@ MonoBehaviour:
   m_Name: GlobalVolume_marion
   m_EditorClassIdentifier: 
   components:
+  - {fileID: 7460262739457509865}
   - {fileID: 5556091412680852109}
   - {fileID: -7507276508896889691}
   - {fileID: 319927251878813245}
   - {fileID: 4318107905508700040}
   - {fileID: -918774275929851530}
-  - {fileID: 7460262739457509865}
+  - {fileID: 2346092084168253965}
+  - {fileID: -6749741290063425161}
 --- !u!114 &319927251878813245
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -118,6 +142,34 @@ MonoBehaviour:
   bladeRotation:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &2346092084168253965
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  color:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.412
+  smoothness:
+    m_OverrideState: 0
+    m_Value: 0.2
+  rounded:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &4318107905508700040
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -161,10 +213,10 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 1.15
+    m_Value: 0.74
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.83
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
